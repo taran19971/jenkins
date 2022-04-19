@@ -3,6 +3,8 @@ class SampleClass {
   __allowedSpecies = ['Human', 'Dog', 'Cat', 'Lion', 'Bird']
     
   def __init__(self, name, species):
+    assert str(name).isalpha() == true
+    assert str(species).isalpha() == true
     self.__name = name
     self.__species = species
   
