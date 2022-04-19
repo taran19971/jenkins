@@ -5,6 +5,7 @@ class SampleClass {
   def __init__(self, name, species):
     assert str(name).isalpha() == true
     assert str(species).isalpha() == true
+    assert species in SampleClass.__allowedSpecies == true
     self.__name = name
     self.__species = species
   
