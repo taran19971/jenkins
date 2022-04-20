@@ -1,4 +1,8 @@
 import unittest
+import os
+
+os.path('~/module1')
+
 from module1 import SampleClass
 
 class AllUnitTests(unittest.TestCase):
