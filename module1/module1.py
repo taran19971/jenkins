@@ -43,3 +43,4 @@ class SampleClass {
       return print('RAWRRR!!')
     else if self.__species == 'Bird':
       return print('CJIRP!! [DUTCH BIRD CHIRPING]')
+}
