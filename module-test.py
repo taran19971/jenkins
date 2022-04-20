@@ -4,10 +4,8 @@ import module1
 class AllUnitTests(unittest.TestCase):
   
   def setUp(self):
-    a = str(input('Enter a name'))
-    b = str(input('Enter a species'))
     try:
-      self.sampleinstance = module1.SampleClass(a, b)
+      self.sampleinstance = module1.SampleClass('a', 'b')
     except:
       print('Creating sample instance')
       self.sampleinstance = module1.SampleClass('John Doe', 'Human')
