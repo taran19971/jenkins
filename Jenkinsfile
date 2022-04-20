@@ -12,7 +12,7 @@ pipeline {
         stage('Unit Testing') {
           steps {
             echo "Running Unit Tests...."
-            sh "C:/Users/Function/AppData/Local/Programs/Python/Python38-32/python.exe -m unittest -v module-test"
+//             sh "C:/Users/Function/AppData/Local/Programs/Python/Python38-32/python.exe -m unittest -v module-test"
           }
         }
         stage ('Integration Testing') {
