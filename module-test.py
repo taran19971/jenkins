@@ -1,9 +1,5 @@
 import unittest
-import os
-
-os.path('~/module1')
-
-from module1 import SampleClass
+import module1
 
 class AllUnitTests(unittest.TestCase):
   
@@ -11,10 +7,10 @@ class AllUnitTests(unittest.TestCase):
     a = str(input('Enter a name'))
     b = str(input('Enter a species'))
     try:
-      self.sampleinstance = SampleClass(a, b)
+      self.sampleinstance = module1.SampleClass(a, b)
     except:
       print('Creating sample instance')
-      self.sampleinstance = SampleClass('John Doe', 'Human')
+      self.sampleinstance = module1.SampleClass('John Doe', 'Human')
       
   def test_string(self):
     self.assertTrue(self.sampleinstance.getName().isalpha())
