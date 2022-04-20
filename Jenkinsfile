@@ -12,7 +12,7 @@ pipeline {
         stage('Unit Testing') {
           steps {
             echo "Running Unit Tests...."
-            sh "python -m unittest"
+            sh "python -m unittest -v module-test"
           }
         }
         stage ('Integration Testing') {
