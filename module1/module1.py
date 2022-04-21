@@ -3,9 +3,9 @@ class SampleClass:
   __allowedSpecies = ['Human', 'Dog', 'Cat', 'Lion', 'Bird']
     
   def __init__(self, name, species):
-    assert str(name).isalpha() == true
-    assert str(species).isalpha() == true
-    assert species in SampleClass.__allowedSpecies == true
+    assert str(name).isalpha() == True
+    assert str(species).isalpha() == True
+    assert species in SampleClass.__allowedSpecies == True
     self.__name = name
     self.__species = species
   
