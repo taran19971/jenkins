@@ -1,4 +1,4 @@
-class SampleClass {
+class SampleClass:
   
   __allowedSpecies = ['Human', 'Dog', 'Cat', 'Lion', 'Bird']
     
@@ -43,4 +43,4 @@ class SampleClass {
       return print('RAWRRR!!')
     else if self.__species == 'Bird':
       return print('CJIRP!! [DUTCH BIRD CHIRPING]')
-}
+  
