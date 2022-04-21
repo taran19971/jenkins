@@ -4,14 +4,10 @@ from module1 import module1
 class AllUnitTests(unittest.TestCase):
   
   def setUp(self):
-    try:
-      self.sampleinstance = module1.SampleClass('a', 'b')
-    except:
-      print('Creating sample instance')
       self.sampleinstance = module1.SampleClass('John Doe', 'Human')
       
   def test_string(self):
-    self.assertTrue(self.sampleinstance.getName().isalpha())
+    self.assertTrue(self.sampleinstance.getName().replace(' ', '').isalpha())
     self.assertTrue(self.sampleinstance.getSpecies().isalpha())
     
   def test_valid_species(self):
