@@ -16,7 +16,7 @@ class AllUnitTests(unittest.TestCase):
   def test_valid_return_type(self):
     self.assertTrue(self.sampleinstance.getName() != None)
     self.assertTrue(self.sampleinstance.getSpecies() != None)
-    self.assertFalse(self.sampleinstance.greet() != None)
+    self.assertTrue(self.sampleinstance.greet() == None)
     
 #   def tearDown(self):
 #     self.sampleinstance.dispose()
