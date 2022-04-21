@@ -35,12 +35,12 @@ class SampleClass:
   def greet(self):
     if self.__species == 'Human':
       return print("Hello my name is {0}, hope you're having a nice day!".format(self.__name))
-    else if self.__species == 'Dog':
+    elif self.__species == 'Dog':
       return print('Woof, woof!! [Tail wiggling rigorously]')
-    else if self.__species == 'Cat':
+    elif self.__species == 'Cat':
       return print('Meow! (MIND YOUR OWN BUSINESS HUMAN!)')
-    else if self.__species == 'Lion':
+    elif self.__species == 'Lion':
       return print('RAWRRR!!')
-    else if self.__species == 'Bird':
+    elif self.__species == 'Bird':
       return print('CJIRP!! [DUTCH BIRD CHIRPING]')
   
