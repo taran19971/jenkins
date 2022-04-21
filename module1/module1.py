@@ -16,15 +16,15 @@ class SampleClass:
     return self.__name
   
   def setName(self, newName):
-    if (str(newName).isalpha())
+    if str(newName).isalpha():
       self.__name = str(newName)
       print("Name updated to {0}".format(newName))
     else:
       print("Numbers and special characters are not allowed!")
   
   def setSpecies(self, newSpecies):
-    if (str(newSpecies).isalpha())
-      if (newSpecies in SampleClass.__allowedSpecies):
+    if str(newSpecies).isalpha():
+      if newSpecies in SampleClass.__allowedSpecies:
         self.__name = str(newName)
         print("Species updated to {0}".format(newName))
       else:
