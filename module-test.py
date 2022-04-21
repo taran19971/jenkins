@@ -13,7 +13,7 @@ class AllUnitTests(unittest.TestCase):
   def test_valid_species(self):
     self.assertTrue(self.sampleinstance.getSpecies() in self.sampleinstance._SampleClass__allowedSpecies)
     
-  def valid_return_type(self):
+  def test_valid_return_type(self):
     self.assertTrue(self.sampleinstance.getName() != None)
     self.assertTrue(self.sampleinstance.getSpecies() != None)
     self.assertTrue(self.sampleinstance.greet() != None)
